@@ -16,12 +16,24 @@
     "bin/*"
   ],
   "dependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@redstone-finance/evm-connector": "^0.0.18",
+    "@typechain/hardhat": "^6.1.5",
+    "@typechain/web3-v1": "^6.0.2",
     "chalk": "4.1.2",
     "commander": "^9.4.0",
+    "dotenv": "^16.0.3",
+    "expo": "^48.0.15",
     "fs-extra": "^10.1.0",
+    "hardhat-celo": "^1.0.1",
+    "hardhat-deploy": "^0.11.26",
     "inquirer": "^8.2.4",
     "node-emoji": "^1.11.0",
     "ora": "5.4.1",
+    "react-native-image-picker": "^5.3.1",
+    "react-native-paper": "^5.7.2",
+    "react-native-share": "^8.2.2",
     "shelljs": "^0.8.5",
     "yargs": "17.5.1"
   },
@@ -35,5 +47,8 @@
   },
   "files": [
     "bin"
-  ]
+  ],
+  "devDependencies": {
+    "hardhat": "^2.14.0"
+  }
 }

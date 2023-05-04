@@ -24,6 +24,10 @@ import LoginScreen from "../screens/LoginScreen";
 // import deployedContracts from "@celo-composer/hardhat/deployments/hardhat_contracts.json";
 import Account from "../screens/Account";
 import Docs from "../screens/Docs";
+import Home from "../screens/Home";
+import Camera from '../screens/Camera';
+import ShareFile from '../screens/ShareFile';
+
 
 export default function Navigation({
     colorScheme,
@@ -49,6 +53,23 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 function RootNavigator() {
     const connector = useWalletConnect();
     return (
+    //     <Stack.Navigator>
+    //     <Stack.Screen
+    //       name="Home"
+    //       component={Home}
+    //       options={{headerShown: false}}
+    //     />
+    //     <Stack.Screen name="Camera"
+    //     component={Camera}
+    //     options={{headerShown: false}}
+    //     />
+    //     <Stack.Screen
+    //       name="ShareFile"
+    //       component={ShareFile}
+    //       options={{headerShown: false}}
+    //     />
+    //   </Stack.Navigator>
+
         <Stack.Navigator>
             {connector.connected ? (
                 <Stack.Screen
